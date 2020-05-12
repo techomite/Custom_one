@@ -313,6 +313,13 @@ public class KmlDocument implements Parcelable {
 		}
 		return ok;
 	}
+
+
+	public  void getCustomLog(){
+
+		Log.d("12345 custom project","this is custom message from custom library by me");
+
+	}
 	
 	// KmlSaxHandler -------------
 
