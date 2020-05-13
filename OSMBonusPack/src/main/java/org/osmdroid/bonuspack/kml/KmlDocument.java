@@ -65,6 +65,8 @@ import javax.xml.parsers.SAXParserFactory;
  */
 public class KmlDocument implements Parcelable {
 
+	private static ArrayList<GeoPoint> list = new ArrayList<>();
+
 	/** the root of KML features contained in this document */
 	public KmlFolder mKmlRoot;
 	/** Shared Styles in this document. String key is the styleId. */
@@ -190,7 +192,12 @@ public class KmlDocument implements Parcelable {
 		}
 		ArrayList<GeoPoint> coordinates = new ArrayList<GeoPoint>(tmpCoords.size());
 		coordinates.addAll(tmpCoords);
+		list.addAll(tmpCoords);
 		return coordinates;
+	}
+
+	public ArrayList<GeoPoint> getCoordinates(){
+		return list;
 	}
 	
 	/**
