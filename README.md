@@ -1,3 +1,27 @@
+Step 1. Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
+
+allprojects {
+
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+      
+		}
+	}
+
+Step 2. Add the dependency
+
+dependencies 
+
+{
+
+	        implementation 'com.github.techomite:Custom_one:3.0'
+          
+	}
+  
+
+
 # About OSMBonusPack
 osmdroid is a library to interact with OpenStreetMap data inside an Android application. It offers an almost full/free replacement to Android map objects: MapView, MapController, Overlays (Marker, Polyline, Polygon), etc.
 
