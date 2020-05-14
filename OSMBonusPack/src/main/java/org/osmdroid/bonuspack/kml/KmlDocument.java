@@ -199,6 +199,10 @@ public class KmlDocument implements Parcelable {
 	public ArrayList<GeoPoint> getCoordinates(){
 		return list;
 	}
+
+	public void clearList(){
+		list.clear();
+	}
 	
 	/**
 	 * Parse a KML document from a url, and build the KML structure in kmlRoot. 
